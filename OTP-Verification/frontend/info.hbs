@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+        <form class="disp_data" action="/data_verify" method="post">
+            <p>Enter the Assigned Otp:-<br>You have 30 seconds</p>
+            <input type="text" placeholder="Enter the OTP" name="otp">
+            <input type="submit">
+
+        </form>
+        
+        
+   
+
+    <script>
+        function display_data(){
+         document.querySelector('.disp_data').innerHTML = `Details: ${Userdata}`;
+         console.log("Hiiii");
+        }
+    </script>
+    
+</body>
+
+
+</html>
