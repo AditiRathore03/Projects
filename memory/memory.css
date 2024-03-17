@@ -1,0 +1,21 @@
+#grid {
+    width: 40%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px;
+    font-size: 1rem; /* Adjust font size as needed to fit content */
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Adjust card size */
+#grid img {
+    width: 100%; /* Cards fill the grid cell */
+    height: 100%; /* Cards fill the grid cell */
+    object-fit: cover; /* Maintain aspect ratio while filling grid cell */
+}

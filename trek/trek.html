@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trek</title>
+    <script src="https://kit.fontawesome.com/e37b348bae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+         body{
+            background-image : url("dd.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            #bg{
+            left:25px;
+            
+            position: absolute;
+            top:4180px;
+            height: 690px;
+            width:97%;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+       }
+
+        
+       }
+
+            
+       
+       
+        h1{
+            color:  rgb(120, 87, 87);
+            position:absolute;
+            top:125px;
+            
+            font-size: 45px;
+        }
+        p{
+            color: rgb(120, 87, 87);
+            position:absolute;
+            top:185px;
+            
+            font-size: 21px;
+
+        }
+        p1{
+            color: rgb(120, 87, 87);
+            position:absolute;
+            top:310px;
+            font-size: 15px;
+
+        }
+        .container{
+            
+            position:absolute;
+            top:245px;
+            left:5px;
+            width : 100%;
+            height:50px;
+            display:flex;
+            align-items: center;
+
+            
+        }
+        form{
+            background:white;
+            width:1230px;
+            height:60px;
+            display:flex;
+            padding:5px;
+            border-radius: 10px;
+        }
+        form input{
+            flex: 1;
+            border:none;
+            outline:none;
+            padding:23px;
+        } 
+        form button{
+            background: #4285f4;
+           
+            padding:10px 50px;
+            border:none;
+            outline:none;
+            color:white;
+            border-radius: 10px;
+            letter-spacing: 1px;
+            cursor: pointer;
+
+        }
+        form .fa-magnifying-glass{
+            align-self: center;
+            padding:10px 20px;
+            
+            color:rgb(0, 0, 0);
+        }
+        p2{
+           
+            position: absolute;
+            top:900px;
+            left:25px;
+            font-weight: bold;
+            font-size: 36px;
+        }
+        p3{
+            position: absolute;
+            top:950px;
+            left:26px;
+            font-size: 21px;
+
+        }
+        #lagos,#cape,#goa,#venice{
+            height:150px;
+            width:300px;
+        }
+        #lagos{
+           
+            left:25px;
+            
+            position: absolute;
+            top:1000px;
+
+        }
+        #cape{
+            
+            left:339px;
+            
+            position: absolute;
+            top:1000px;
+
+        }
+        #venice{
+            
+            left:649px;
+            
+            position: absolute;
+            top:1000px;
+
+        }
+        #goa{
+            
+            left:960px;
+            
+            position: absolute;
+            top:1000px;
+
+        }
+        p4{
+            position: absolute;
+            top:1290px;
+            left:26px;
+            font-size: 37px;
+            font-weight: bold;
+
+
+        }
+        p5{
+            position: absolute;
+            top:1340px;
+            left:26px;
+            font-size: 21px;
+            
+
+        }
+        
+        #LA{
+            border:1px solid black;
+            color:white;
+            background-color: black;
+            position:absolute;
+            top:1006px;
+            left:270px;
+            padding:5px;
+            
+        }
+        #VE{
+            border:1px solid black;
+            color:white;
+            background-color: black;
+            position:absolute;
+            top:1006px;
+            left:890px;
+            padding:5px;
+            
+        }
+        #CP{
+            border:1px solid black;
+            color:white;
+            background-color: black;
+            position:absolute;
+            top:1006px;
+            left:560px;
+            padding:5px;
+        }
+        #GO{
+            border:1px solid black;
+            color:white;
+            background-color: black;
+            position:absolute;
+            top:1006px;
+            left:1218px;
+            padding:5px;
+        }
+        p9{
+            position: absolute;
+            top:2150px;
+            left:26px;
+            font-size: 30px;
+            font-weight: 22px;
+
+
+        }
+        p16{
+            position: absolute;
+            top:2520px;
+            left:26px;
+            font-size: 30px;
+            font-weight: 22px;
+
+
+        }
+        p24{
+            position: absolute;
+            top:3100px;
+            left:26px;
+            font-size: 30px;
+            font-weight: 22px;
+
+
+        }
+        p25{
+            position: absolute;
+            top:3500px;
+            left:26px;
+            font-size: 30px;
+            font-weight: 22px;
+
+
+        }
+        p26{
+            position: absolute;
+            top:3800px;
+            left:26px;
+            font-size: 30px;
+            font-weight: 22px;
+
+
+        }
+        p27{
+            position: absolute;
+            top:3985px;
+            left:26px;
+            font-size: 30px;
+            font-weight: 22px;
+
+
+        }
+        p17{
+            position: absolute;
+            top:2879px;
+            left:26px;
+            font-size: 30px;
+            font-weight: 22px;
+
+
+        }
+        #unique{
+            position: absolute;
+            top:2200px;
+            left:26px;
+            font-size: 18px;
+            height: 290px;
+        }
+        #unique2{
+            position: absolute;
+            top:2568px;
+            left:26px;
+            font-size: 18px;
+            height: 290px;
+        }
+        #unique3{
+            position: absolute;
+            top:2929px;
+            left:26px;
+            font-size: 18px;
+            height: 290px;
+        }
+        #unique4{
+            position: absolute;
+            top:3159px;
+            left:26px;
+            font-size: 18px;
+            height: 290px;
+        }
+        #unique5{
+            position: absolute;
+            top:3559px;
+            left:26px;
+            font-size: 18px;
+            height: 190px;
+        }
+        #unique6{
+            position: absolute;
+            top:3849px;
+            left:26px;
+            font-size: 18px;
+            height: 90px;
+        }
+        #unique7{
+            position: absolute;
+            top:4000px;
+            left:26px;
+            font-size: 18px;
+            height: 190px;
+        }
+        
+       p10{ position: absolute;
+            top:2086px;
+            left:26px;
+            font-size: 37px;
+            font-weight: bold;
+
+
+       }
+       .navbar {
+  overflow: hidden;
+  
+  position:absolute;
+  top: 19px;
+  left:216px;
+  width: 80%;
+  font-weight: 400;
+  transition-duration: 2s;
+}
+
+.navbar a {
+  float: left;
+  /* display: block; */
+  color: rgb(120, 87, 87);
+  text-align: center;
+  padding: 14px 32px;
+  transition-duration: 2s;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight:bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline ;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+  cursor: pointer;
+  
+}
+#gorilla ,#kenya ,#uganda, #wine,#morocco,#nigeria{
+    transition-duration: 2s;
+            
+           width:405px;
+           height:300px;
+        }
+        #gorilla{
+            
+            left:24px;
+            
+            position: absolute;
+            top:1390px;
+
+        }
+        #kenya{
+            
+            left:455px;
+            
+            position: absolute;
+            top:1390px;
+
+        }
+        #morocco{
+            
+            left:888px;
+            
+            position: absolute;
+            top:1390px;
+
+        }
+        #uganda{
+            
+            left:24px;
+            
+            position: absolute;
+            top:1710px;
+
+        }
+        #nigeria{
+            
+            left:455px;
+            
+            position: absolute;
+            top:1710px;
+
+        }
+        #wine{
+            
+            left:888px;
+            
+            position: absolute;
+            top:1710px;
+
+        }
+        td:hover{color:#4285f4;}
+        #gorilla,#wine,#nigeria,#uganda,#kenya,#morocco {
+  transition: transform .8s;
+  
+}
+
+#gorilla:hover,#wine:hover,#nigeria:hover,#uganda:hover,#kenya:hover,#morocco:hover {
+  
+  transform: scale(1.1); 
+}
+p18,p19,p20,p21,p22,p23{
+    color:white;
+    position: absolute;
+    font-size: 42px;
+    font-weight:900;
+}
+p18{
+    top:1515px;
+    left:100px;
+}
+p19{
+    top:1525px;
+    left:540px;
+}
+p20{
+    top:1515px;
+    left:950px;
+}
+p21{
+    top:1835px;
+    left:100px;
+}
+p22{
+    top:1895px;
+    left:540px;
+}
+p23{
+    top:1835px;
+    left:950px;
+}
+
+
+ </style>
+
+    
+    <h1>YOUR NEXT ADVENTURE IN WORLD</h1>
+    <p>Safely travel across the world with trek-Adventures,Accomodation,Visa and more</p>
+    <p1>Search from over 81,102 hotels across 7 continents</p1>
+    <div class="container">
+    <form>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Enter a country, city or landmark">
+        <button type="submit">Search</button>
+    </form>
+    </div>
+    <p2>What do you want your next travel adventure to be like ?</p2>
+    <p3>Let us give you a memorable experience</p3>
+    <img src="lagos.jpg" id="lagos">
+    <img src="capetown.webp" id="cape">
+    <img src="goa.jpg" id="goa">
+    <img src="venice.jpg" id="venice">
+    <p4>International Adventures</p4>
+    <p5>Explore the most amazing places aross the world.</p5>
+    <div class="cities">
+        <p6 id="LA">Lagos</p6>
+        <p7 id="CP">Capetown</p7>
+        <p8 id="GO">Goa</p8>
+        <p99 id="VE">Venice</p99>
+    </div>
+    <p10>Where are you going ?</p10>
+    <p9>Destinations in Asia</p9>
+    <table style="width:95%; font-size:15px; " id="unique">
+        <tr>
+            <td>Afganistan</td>
+            <td>Armania</td>
+            <td>Azerbaijan</td>
+            <td>Bahrain</td>
+            <td>Bangladesh</td>
+            <td>Bhutan</td>
+            <td>Benin</td>
+            <td>Cambodia</td>
+            </tr>
+        <tr>
+            <td>China</td>
+            <td>Christmas Island</td>
+            <td>Cocos</td>
+            <td>Georgia</td>
+            <td>Hong Kong</td>
+            <td>India</td>
+            <td>Indonesi</td>
+            <td>Iran</td>
+            </tr>
+            <tr>
+                <td>Iraq</td>
+                <td>Israel</td>
+                <td>Japan</td>
+                <td>Jordan</td>
+                <td>Kazakhstan</td>
+                <td>North Korea</td>
+                <td>South Korea</td>
+                <td>Kuwait</td>
+                </tr>
+                <tr>
+                    <td>Kyrgyzstan</td>
+                    <td>Laos</td>
+                    <td>Lebanon</td>
+                    <td>Macao</td>
+                    <td>Malaysia</td>
+                    <td>Maldives</td>
+                    <td>Mongolia</td>
+                    <td>Myanmar</td>
+                    </tr>
+                    <tr>
+                        <td>Nepal</td>
+                        <td>Oman</td>
+                        <td>Pakistan</td>
+                        <td>Palestinian</td>
+                        <td>Philippines</td>
+                        <td>Qatar</td>
+                        <td>Saudi Arabia</td>
+                        <td>Singapore</td>
+                        </tr>
+                        <tr>
+                            <td>Sri Lanka</td>
+                            <td>Syria</td>
+                            <td>Taiwan</td>
+                            <td>Tajikistan</td>
+                            <td>Thailand</td>
+                            <td>Turkey</td>
+                            <td>Vietnam</td>
+                            <td>Yemen</td>
+
+                            </tr>
+
+
+        </table>
+        <p16>Destinations in Europe</p16>
+    <table style="width:95%; font-size:15px; height: 234px;" id="unique2">
+        <tr>
+            <td>Cyprus</td>
+            <td>Albania</td>
+            <td>Andorra</td>
+            <td>Austria</td>
+            <td>Belarus</td>
+            <td>Belgium</td>
+            <td>Bulgaria</td>
+            <td>Croatia</td>
+            </tr>
+        <tr>
+            <td>Czech</td>
+            <td>Denmark</td>
+            <td>Estonia</td>
+            <td>Faroe</td>
+            <td>Finland</td>
+            <td>Gibraitar</td>
+            <td>United K</td>
+            <td>Greece</td>
+            </tr>
+            <tr>
+                <td>Hungary</td>
+                <td>Iceland</td>
+                <td>Ireland</td>
+                <td>Italy</td>
+                <td>Latvia</td>
+                <td>Lithuania</td>
+                <td>Luxemborg</td>
+                <td>Macedonia</td>
+                </tr>
+                <tr>
+                    <td>Malta</td>
+                    <td>Moldova</td>
+                    <td>Monaco</td>
+                    <td>Netherlands</td>
+                    <td>Norway</td>
+                    <td>Poland</td>
+                    <td>Portugal</td>
+                    <td>Romania</td>
+                    </tr>
+                    <tr>
+                        <td>Russia</td>
+                        <td>San Marino</td>
+                        <td>Spain</td>
+                        <td>Svalbard</td>
+                        <td>Sweden</td>
+                        <td>Switzerland</td>
+                        <td>Ukraine</td>
+                        <td>Serbia</td>
+                        </tr>
+                       
+
+        </table>
+        <p17>Destinations in Australia</p17>
+       
+        <table style="width:95%; font-size: 15px; height:133px;" id="unique3">
+            
+            
+            <tr>
+                <td>Australia</td>
+                <td>Cook Islands</td>
+                <td>Micronesia</td>
+                <td>Fiji</td>
+                <td>French</td>
+                <td>Kiribati</td>
+                <td>Marshalls</td>
+                <td>Nauru</td>
+                </tr>
+               
+            <tr>
+                <td>Caledonia</td>
+                <td>Zealand</td>
+                <td>Niue</td>
+                <td>Norfolk</td>
+                <td>Mariana</td>
+                <td>Palau</td>
+                <td>Guinea</td>
+                <td>Pitcarin</td>
+                </tr1>
+                <tr>
+                    <td>Samao</td>
+                    <td>Solomon</td>
+                    <td>Tokelau</td>
+                    <td>Tonga</td>
+                    <td>Tuvalu</td>
+                    <td>Vanuatu</td>
+                    <td>Wallis</td>
+                    <td>Guam</td>
+                    </tr>
+                  
+    
+            </table>
+       
+        
+        
+        <!-- <p15 style="color: green;">I am box</p15> -->
+        <div class="navbar">
+            <a href="#home">Hotels</a>
+            <a href="#news">Flights</a>
+            <a href="#contact">Visa</a>
+            <a href="#contact">Bus</a>
+          </div>
+          <div class="zoom">
+          <img src="gorilla.jpg" id="gorilla">
+          <img src="kenya2.jpg" id="kenya">
+          <img src="morocco.jpg" id="morocco">
+          <img src="uganda.jpg" id="uganda">
+          <img src="nigeria.jpg" id="nigeria">
+          <img src="wine.jpg" id="wine">
+          </div>
+          <p18>Experience the<br>amazing Gorilla<br>trek of Rwanda</p18>
+          <p19>Explore the<br>exotic resorts of<br>Kenya</p19>
+          <p20>Get a dip in the<br>exotic hammams<br>of Morocco</p20>
+          <p21>Enjoy the<br>amazing parks in<br>the Uganda</p21>
+          <p22>A night out in<br>Nigeria</p22>
+          <p23>Treat your taste<br>buds to exotic<br>wines</p23>
+          
+        <p24>Destinations in Africa</p24>
+        <table style="width:95%; font-size:15px; " id="unique4">
+            <tr>
+                <td>Algeria</td>
+                <td>Angola</td>
+                <td>Benin</td>
+                <td>Botswana</td>
+                <td>Burundi</td>
+                <td>Cameroon</td>
+                <td>Cape Verde</td>
+                <td>Chad</td>
+                </tr>
+            <tr>
+                <td>Comoros</td>
+                <td>Congo</td>
+                <td>Ivory</td>
+                <td>DR Congo</td>
+                <td>Dijbouti</td>
+                <td>Egypt</td>
+                <td>Guinea</td>
+                <td>Eritrea</td>
+                </tr>
+                <tr>
+                    <td>Ethiopia</td>
+                    <td>Gabon</td>
+                    <td>Gambia</td>
+                    <td>Ghana</td>
+                    <td>Guinea</td>
+                    <td>Kenya</td>
+                    <td>Lesotho</td>
+                    <td>Liberia</td>
+                    </tr>
+                    <tr>
+                        <td>Libya</td>
+                        <td>Madagascar</td>
+                        <td>Malawi</td>
+                        <td>Mali</td>
+                        <td>Mauritania</td>
+                        <td>Mauritius</td>
+                        <td>Mayotte</td>
+                        <td>Morocco</td>
+                        </tr>
+                        <tr>
+                            <td>Mozambique</td>
+                            <td>Namibia</td>
+                            <td>Niger</td>
+                            <td>Nigeria</td>
+                            <td>Reunion</td>
+                            <td>Rwanda</td>
+                            <td>Saint Helena</td>
+                            <td>Senegal</td>
+                            </tr>
+                            <tr>
+                                <td>Somalia</td>
+                                <td>South Africa</td>
+                                <td>Sudan</td>
+                                <td>Swaziland</td>
+                                <td>Tanzania</td>
+                                <td>Togo</td>
+                                <td>Tunisia</td>
+                                <td>Uganda</td>
+    
+                                </tr>
+    
+    
+            </table>
+           
+            <p25>Destinations in North America</p25>
+            <table style="width:95%; font-size:15px; " id="unique5">
+                <tr>
+                    <td>Anguilla</td>
+                    <td>Antigua</td>
+                    <td>Aruba</td>
+                    <td>Bahamas</td>
+                    <td>Barbados</td>
+                    <td>Belize</td>
+                    <td>Bermuda</td>
+                    <td>Canada</td>
+                    </tr>
+                <tr>
+                    <td>Cayman</td>
+                    <td>Costa</td>
+                    <td>Cuba</td>
+                    <td>Dominica</td>
+                    <td>El Salvador</td>
+                    <td>Greenland</td>
+                    <td>Grenada</td>
+                    <td>Guadeloupe</td>
+                    </tr>
+                    <tr>
+                        <td>Guatemala</td>
+                        <td>Haiti</td>
+                        <td>Honduras</td>
+                        <td>Jamaica</td>
+                        <td>Martinique</td>
+                        <td>Mexico</td>
+                        <td>Montserrat</td>
+                        <td>Netherlands</td>
+                        </tr>
+                        <tr>
+                            <td>Nicarauga</td>
+                            <td>Panama</td>
+                            <td>Nevis</td>
+                            <td>Lucia</td>
+                            <td>Pierre</td>
+                            <td>Virgin Islands</td>
+                            <td>Caicos</td>
+                            <td>Grenadines</td>
+                            </tr>
+                           
+        
+        
+                </table>
+                <p26>Destinations in South America</p26>
+            <table style="width:95%; font-size:15px; " id="unique6">
+                <tr>
+                    <td>Argentina</td>
+                    <td>Bolivia</td>
+                    <td>Brazil</td>
+                    <td>Chile</td>
+                    <td>Colombia</td>
+                    <td>Ecuador</td>
+                    <td>Falkland</td>
+                    <td>Guiana</td>
+                    </tr>
+                <tr>
+                    <td>Guyana</td>
+                    <td>Paraguay</td>
+                    <td>Peru</td>
+                    <td>Suriname</td>
+                    <td>Uruguay</td>
+                    <td>Venezuela</td>
+                   
+        
+        
+                </table>
+                <p27>Destinations in Antarctica</p27>
+            <table style="width:35%; font-size:15px; " id="unique7">
+                <tr>
+                    <td>French Southern Territories</td>
+                    <td>S. Georgia and S. Sandwich<br>Islands</td>
+                    
+                           
+        
+        
+                </table>
+                <img src="bg7.jpg" id="bg">
+        <p11 style="color:rgb(214, 204, 204);position:absolute;top:4300px;
+        left:70px;font-size:22px;" >Explore
+             the world</p11>
+        <p12 style="color:rgb(255, 253, 253);position:absolute;
+        top:4400px;left:60px;font-size:30px;font-weight: 500;">“Get a lifetime experience
+         across the vast <br>countries
+             with parks waterfalls, local culture and<br> exquisite
+              naija jollof !.”</p12>
+        <p13 style="color:white;position:absolute;top:4640px;
+        left:100px;font-size:25px;font-weight: 400;">2000+</p13>
+        <p14 style="color:rgb(222, 204, 204);position:absolute;top:4674px;
+        left:80px;font-size:21px;font-weight: 300;" >independent</p14>
+        <p14 style="color:rgb(222, 204, 204);position:absolute;top:4700px;
+        left:90px;font-size:21px;font-weight: 300;" >views</p14>
+               
+           
+   
+</body>
+</html>

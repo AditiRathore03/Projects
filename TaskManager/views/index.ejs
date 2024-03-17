@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+    
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="/">Manage your Task </a>
+    </nav>
+
+    <div class="container mt-5">
+        <form action="/add/todo" method="post" class="d-flex">
+            <input type="text" name="todo" class="form-control" placeholder="Enter your task here...">
+            <input type="submit" value="Add your Task" class="btn btn-md btn-primary mx-2">
+        </form>
+
+        <ul class="list-group my-5">
+            <% todo.forEach(todos => { %>
+                <li class="list-group-item"  ><%= todos.todo %> </li>
+                <a href="/delete/todo/<%= todos._id %>" class="btn btn-danger btn-sm " style="inline-size: 390px;" >Delete</a>
+            <% }); %>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and Loops</title>
+   
+</head>
+<body>
+    <style>
+        body{
+   font-family: Arial;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 200px 200px 100px;
+    
+    margin:20px;
+    padding:10px;
+}
+.dt{
+    background-color: darkred;
+    color:white;
+    border:none;
+    font-size: 15px;
+    padding:6px;
+}
+.bt{
+    background-color: green;
+    color:white;
+    border:none;
+    font-size: 15px;
+    padding:6px;
+    width:55px;
+}
+.head{display:grid;
+    grid-template-columns: 200px 200px 100px;
+    
+    margin:20px;
+    padding:10px;
+    font-weight: 59px;
+
+}
+
+    </style>
+    
+    <div class="head">
+        <form action="/add/todo" method="post" >
+    <p><input class="input"  name="todo"  placeholder="Todo"></p>
+    <p><input type="date" class="date"></input></p>
+    <p><button class="bt" onclick="
+        todos();
+    ">Add</button></p></div>
+    </form>
+    <div class="webtext grid">
+       
+        <% for (const singleTodo of todo) { %>
+            <p><%= singleTodo.todo %> <button class="dt" onclick="deleteTodo('<%= singleTodo._id %>')">Delete</button></p>
+        <% } %>
+    </div>
+   
+   <script>
+    const todolist = [{
+    name: 'make dishes',
+    duedate: '2023-12-22'
+},
+    {
+    name: 'wash clothes',
+    duedate: '2023-12-23'
+}];
+
+function renderList() {
+    
+    let todolistf = "";
+
+    for (let i = 0; i < todolist.length; i++) {
+       
+        let html = `<p>${todolist[i].name} </p> <p>${todolist[i].duedate}</p><p> <button class="dt" onclick="
+     todolist.splice(${i} , 1);
+     renderList();"
+     >Delete</button></p>`
+     
+        todolistf += html;
+        
+       
+    }
+    console.log( todolistf);
+    document.querySelector('.webtext').innerHTML = todolistf;
+    
+}
+
+function todos() {
+
+    const input = document.querySelector('.input');
+    const dueDate = document.querySelector('.date');
+
+    let todo = { name: input.value , 
+                duedate:dueDate.value}
+    todolist.push(todo);
+
+
+    input.value = "";
+    dueDate.value = "";
+    renderList();
+}
+function deleteTodo(todoId) {
+            fetch(`/delete/todo/${todoId}`, { method: 'GET' })
+                .then(response => response.json())
+                .then(() => {
+                    console.log('Todo deleted successfully!');
+                  
+                    location.reload();
+                })
+                .catch(error => console.error('Error deleting todo:', error));
+            }
+   </script>
+</body>
+</html> -->
